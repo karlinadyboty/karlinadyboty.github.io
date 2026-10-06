@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harlandi — Développeuse Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="container">
+    <div class="logo">Harlandi</div>
+    <div class="nav-actions">
+      <button class="availability-toggle" id="availability-toggle" type="button" aria-pressed="true" aria-label="Changer l'état de disponibilité">
+        <span class="switch-track">
+          <span class="switch-thumb"></span>
+        </span>
+        <span class="switch-label">Disponible</span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+    <ul id="nav-links">
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Développeuse Web &amp; Bases de données</div>
+    <h1>Je construis des applications web, allant de la base de données à l'interface.</h1>
+    <div class="role-rotator-wrap" aria-live="polite">
+      <span id="role-rotator"></span><span class="caret"></span>
+    </div>
+    <p class="lead">
+      Développeuse web diplômée, spécialisée dans la conception de bases de données relationnelles
+      et la création d'applications web. J'aime transformer des besoins métier en applications
+      fiables, bien structurées et performantes. Je recherche un poste orienté vers le développement
+      back-end et les bases de données, où je pourrais contribuer à concevoir des applications robustes.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+      <a href="CV.pdf" class="btn btn-outline">Télécharger mon CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPÉTENCES ============ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Compétences</div>
+      <h2>Ce que je maîtrise</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Front-end</h3>
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Conception d'interfaces responsives</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Back-end</h3>
+        <ul>
+          <li>PHP / Laravel</li>
+          <li>Conception d'API REST</li>
+          <li>Authentification &amp; logique métier</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Bases de données</h3>
+        <ul>
+          <li>Modélisation relationnelle (MCD / MLD)</li>
+          <li>MySQL</li>
+          <li>Normalisation, requêtes SQL</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Outils</h3>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETS ============ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Projets</div>
+      <h2>Ce que j'ai construit</h2>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-head">
+        <h3>Kota — Suivi budgétaire</h3>
+        <span class="status-badge status-wip">En cours</span>
+      </div>
+      <p class="project-desc">
+        Application de gestion de dépenses personnelles basée sur un système de
+        quota journalier, pour aider à éviter les dépenses superflues. Projet
+        mené de bout en bout : conception de la base de données (modèle
+        relationnel, normalisation), interface utilisateur fonctionnelle, et
+        API back-end en cours de développement (Laravel).
+      </p>
+      <div class="tag-list">
+        <span class="tag">HTML/CSS/JS</span>
+        <span class="tag">PHP / Laravel</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Conception BDD</span>
+      </div>
+      <div class="project-links">
+        <a href="#" data-placeholder="true">Voir le code →</a>
+        <!-- TODO : remplace par le lien GitHub une fois le repo créé -->
+        <a href="#" data-placeholder="true">Démo →</a>
+        <!-- TODO : lien vers une démo en ligne si tu en héberges une -->
+      </div>
+    </div>
+
+    <!-- TODO : duplique ce bloc .project-card reveal pour chaque nouveau projet -->
+
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Contact</div>
+      <h2>Travaillons ensemble</h2>
+    </div>
+    <div class="contact-box reveal">
+      <h3>Disponible pour un stage ou un premier poste</h3>
+      <p>
+        N'hésitez pas à me contacter pour discuter d'une opportunité ou
+        simplement échanger sur un projet.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:karlinadyboty@gmail.com" class="btn btn-primary">M'écrire un email</a>
+        <a href="#" class="btn btn-outline" data-placeholder="true">LinkedIn</a>
+        <a href="https://github.com/karlinadyboty" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+        <!-- TODO : remplace les href="#" par tes vrais liens -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Harlandi — Portfolio
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
